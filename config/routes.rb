@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
   resources :posts do 
     collection do
-      get 'hobbby'
+      get 'hobby'
       get 'study'
       get 'team'
     end
