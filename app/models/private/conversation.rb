@@ -4,8 +4,12 @@ class Private::Conversation < ApplicationRecord
       where(sender_id: user2_id, recipient_id: user1_id)
     )
   end
-  
+
   has_many :messages, class_name: "Private::Message", foreign_key: :conversation_id
   belongs_to :sender, foreign_key: :sender_id, class_name: 'User'
   belongs_to :recipient, foreign_key: :recipient_id, class_name: 'User'
+
+  def opposed_user(user)
+    user == recipient ? sender : recipient
+  end
 end
