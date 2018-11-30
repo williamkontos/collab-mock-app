@@ -21,3 +21,5 @@ funcitonality thus far...
 This app is built heavily with helpers and partials, which is something I wanted to focus on to better familiarize myself with the workflow. 
 
 I was also challenged with working with Action Cable for the first time. One to one chat is functional, still working on implementing a group chat.
+
+![collab-app-homepage](https://raw.githubusercontent.com/williamkontos/collab-mock-app/master/collab-app-home.png)
